@@ -17,7 +17,7 @@ public class LocalHost {
             BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()))) {
 
                 String response = "";
-                while(!(response == null)) {
+                while(true) {
                     response = in.readLine();
                     System.out.println(response);
                     if(response.equals("Goodbye!")){
